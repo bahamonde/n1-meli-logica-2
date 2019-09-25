@@ -22,11 +22,11 @@ if (porcentagem < 2){
     console.log("Descartar produto, muito proximo de vencer")
 }
 
-else if(porcentagem < 10 && produtos.congelado == false) {
+else if(porcentagem < 10 && !produtos.congelado) { //NÃO CONGELADO
     console.log("Desconto!  Produto não congelado e próximo da validade.")
 }
 
-else if (porcentagem < 5 && produtos.congelado == true) {
+else if (porcentagem < 5 && produtos.congelado) { //assim aceita como TRUE
     console.log("Desconto! Produto congelado e próximo da validade.")
 
 }else {
